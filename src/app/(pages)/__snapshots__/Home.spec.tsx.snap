@@ -1,0 +1,303 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Home Page > Calculator > Match Snapshot 1`] = `
+<div>
+  <div
+    class="d_flex ai_center jc_center flex_1 w_full min-h_screen"
+  >
+    <div
+      class="d_flex flex-d_column ai_center gap_10px w_full"
+    >
+      <h2
+        class="text text--variant_heading fs_2xl"
+      >
+        計算機 v2.0
+      </h2>
+      <div
+        class="d_flex ai_stretch jc_space-around gap_10px flex-d_row w_full"
+      >
+        <div
+          class="bd_1px_solid bd-c_border.default bdr_l1 p_4"
+        >
+          <div
+            class="d_flex flex-d_column gap_4"
+          >
+            <div
+              class="bdr_l2 p_1 bg-c_bg.muted"
+            >
+              <p
+                class="text ta_end fs_5xl"
+              >
+                0
+              </p>
+            </div>
+            <div
+              class="d_grid grid-tc_repeat(4,_1fr) gap_10px"
+            >
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                AC
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+                disabled=""
+              >
+                ()
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+                disabled=""
+              >
+                %
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                ÷
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                7
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                8
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                9
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                +
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                4
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                5
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                6
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                -
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                1
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                2
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                3
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                ×
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                0
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+                disabled=""
+              >
+                .
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                ←
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        class="text"
+      >
+        読み込み中…
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Home Page > Calculator > plus 1`] = `
+<div>
+  <div
+    class="d_flex ai_center jc_center flex_1 w_full min-h_screen"
+  >
+    <div
+      class="d_flex flex-d_column ai_center gap_10px w_full"
+    >
+      <h2
+        class="text text--variant_heading fs_2xl"
+      >
+        計算機 v2.0
+      </h2>
+      <div
+        class="d_flex ai_stretch jc_space-around gap_10px flex-d_row w_full"
+      >
+        <div
+          class="bd_1px_solid bd-c_border.default bdr_l1 p_4"
+        >
+          <div
+            class="d_flex flex-d_column gap_4"
+          >
+            <div
+              class="bdr_l2 p_1 bg-c_bg.muted"
+            >
+              <p
+                class="text ta_end fs_5xl"
+              >
+                0
+              </p>
+            </div>
+            <div
+              class="d_grid grid-tc_repeat(4,_1fr) gap_10px"
+            >
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                AC
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+                disabled=""
+              >
+                ()
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+                disabled=""
+              >
+                %
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                ÷
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                7
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                8
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                9
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                +
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                4
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                5
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                6
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                -
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                1
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                2
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                3
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                ×
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                0
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+                disabled=""
+              >
+                .
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                ←
+              </button>
+              <button
+                class="button button--variant_solid button--size_xl bdr_xl fs_xl"
+              >
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        class="text"
+      >
+        読み込み中…
+      </p>
+    </div>
+  </div>
+</div>
+`;
