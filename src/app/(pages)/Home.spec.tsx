@@ -12,7 +12,7 @@ describe('Home Page', () => {
       expect(container).toMatchSnapshot();
     });
 
-    it('plus', async () => {
+    it('plus', () => {
       const { getByText } = render(<Home />);
 
       expect(getByText('()')).toBeDisabled();

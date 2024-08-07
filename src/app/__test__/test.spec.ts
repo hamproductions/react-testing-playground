@@ -1,6 +1,7 @@
 import { describe, expect, it, test } from 'vitest';
 
-const sum = (a: any, b: any) => a + b;
+const sum = <T extends string | number>(a: T, b: T): string | number =>
+  (a as unknown as string) + (b as unknown as string);
 
 describe('Test Testing', () => {
   test('Adds a and b', () => {

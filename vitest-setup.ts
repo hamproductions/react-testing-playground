@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom/vitest';
+
 import { cleanup, configure } from '@testing-library/react';
 import './src/app/index.css';
 

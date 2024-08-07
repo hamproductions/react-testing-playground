@@ -3,17 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "next start",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "ci:build": "NODE_ENV=production next build",
+    "type-check": "tsc",
+    "check": "bun lint && bun type-check",
+    "ci:check": "bun lint --format json --output-file lint_report.json && bun type-check",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "fix": "bun lint:fix",
-    "codegen:panda": "panda codegen",
     "prepare": "bun codegen:panda",
-    "test": "vitest",
-    "test:ui": "vitest --ui",
-    "storybook:dev": "storybook dev"
+    "test:ui": "vitest --ui --coverage.enabled",
+    "test:preview": "vitest-preview && open https://localhost:5006",
+    "test:dev": "bunx concurrently \"TEST_PREVIEW=true bun test:ui\" \"bun test:preview\"",
+    "storybook:dev": "storybook dev",
+    "codegen:panda": "panda codegen",
+    "codegen:components": "bunx @parkui/cli add --all"
   },
   "dependencies": {
     "@ark-ui/react": "^3.5.0",

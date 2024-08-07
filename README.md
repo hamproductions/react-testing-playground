@@ -1,19 +1,15 @@
-# やること
-- [] Setup Test（設定）
-- [] Basic Test
-- [] Unit Test（ユニットテスト）
-- [] UI Test（UIテスト）
-- [] Integration Testing（統合テスト）
-- [] Mocking Package
-- [] Mocking Requests
-- [] Storybook 
-  
 # 設定の説明
 
-# 参考できるところ
+## 参考できるところ
+- package.json
 - Github Actions
-- 
-# リンク集
+- vitest.config.ts
+- vitest-setup.ts
+- msw設定
+- eslint
+- prettier
+  
+## リンク集
 - テストにまつわる知識：
   - https://kentcdodds.com/blog/common-mistakes-with-react-testing-library
   - https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications
@@ -23,3 +19,13 @@
 - msw: 
   - https://mswjs.io/docs/getting-started
   - https://github.com/mswjs/examples
+  
+## やること
+- [x] Setup Test（設定）
+- [x] Basic Test
+- [x] Unit Test（ユニットテスト）
+- [x] UI Test（UIテスト）
+- [x] Integration Testing（統合テスト）
+- [x] Mocking Package
+- [x] Mocking Requests
+- [x] Storybook 
