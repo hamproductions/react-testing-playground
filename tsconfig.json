@@ -24,6 +24,7 @@
       "@/*": ["./src/*"],
       "~/*": ["./src/*"]
     },
+    "types": ["@testing-library/jest-dom"],
     "target": "ES2017"
   },
   "include": [
@@ -32,7 +33,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "eslint.config.mjs",
-    "vitest-setup.ts"
+    "./vitest-setup.ts"
   ],
   "exclude": ["node_modules"]
 }

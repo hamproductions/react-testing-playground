@@ -1,15 +1,12 @@
-import '@testing-library/jest-dom/vitest';
-
 import { cleanup, configure } from '@testing-library/react';
 import './src/app/index.css';
 
 import { afterAll, afterEach, beforeAll, beforeEach, onTestFailed } from 'vitest';
 
-import { setupServer } from 'msw/node';
+import { server } from './src/app/__test__/msw';
 
-import { handlers } from './src/app/__test__/msw/index';
-
-export const server = setupServer(...handlers);
+import '@testing-library/jest-dom/vitest';
+import { handlers } from '@/app/__test__/msw/handlers';
 
 server.events.on('request:start', ({ request }) => {
   console.log('MSW intercepted:', request.method, request.url);
@@ -23,12 +20,10 @@ beforeAll(() => {
 });
 
 beforeEach(() => {
-  // @ts-expect-error TODO:
-  window.PointerEvent = MouseEvent;
-  // @ts-expect-error TODO:
+  window.PointerEvent = PointerEvent;
+  //@ts-expect-error mocking
   delete window.location;
-  // @ts-expect-error TODO:
-  window.location = new URL('http://localhost/');
+  window.location = new URL('http://localhost/') as unknown as Location;
   window.localStorage.clear();
 });
 
@@ -41,4 +36,5 @@ afterEach(() => {
   server.resetHandlers(...handlers);
   cleanup(); // clear testing data after each test run
 });
+
 afterAll(() => server.close());

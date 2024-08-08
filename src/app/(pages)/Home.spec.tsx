@@ -1,9 +1,7 @@
 import { render } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
 import userEvent from '@testing-library/user-event';
+import { describe, expect, it } from 'vitest';
 import { Home } from './Home';
-
-import '@testing-library/jest-dom/vitest';
 
 describe('Home Page', () => {
   describe('Calculator', () => {
@@ -12,13 +10,13 @@ describe('Home Page', () => {
       expect(container).toMatchSnapshot();
     });
 
-    it('plus', () => {
+    it('Disabled Button', () => {
       const { getByText } = render(<Home />);
 
       expect(getByText('()')).toBeDisabled();
     });
 
-    it('plus', async () => {
+    it('Plus', async () => {
       const { getByText } = render(<Home />);
 
       const user = userEvent.setup();
@@ -32,7 +30,7 @@ describe('Home Page', () => {
       expect(getByText('12')).toBeVisible();
     });
 
-    it('minus', async () => {
+    it('Minus', async () => {
       const { getByText } = render(<Home />);
 
       const user = userEvent.setup();
@@ -46,7 +44,7 @@ describe('Home Page', () => {
       expect(getByText('10')).toBeVisible();
     });
 
-    it('minus', async () => {
+    it('Multiplication', async () => {
       const { getByText } = render(<Home />);
 
       const user = userEvent.setup();
@@ -62,7 +60,7 @@ describe('Home Page', () => {
     });
   });
   describe('Weather Report', () => {
-    it('fetch', async () => {
+    it('Shows Data from API', async () => {
       const { findByText } = render(<Home />);
 
       expect(await findByText('99°C')).toBeVisible();
