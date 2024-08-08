@@ -14,9 +14,12 @@
     "lint:fix": "eslint src --fix",
     "fix": "bun lint:fix",
     "prepare": "bun codegen:panda",
+    "test": "vitest",
     "test:ui": "vitest --ui --coverage.enabled",
     "test:preview": "vitest-preview && open https://localhost:5006",
     "test:dev": "bunx concurrently \"TEST_PREVIEW=true bun test:ui\" \"bun test:preview\"",
+    "ci:test": "vitest --coverage.enabled",
+    "analyze": "bunx vite-bundle-visualizer",
     "storybook:dev": "storybook dev",
     "codegen:panda": "panda codegen",
     "codegen:components": "bunx @parkui/cli add --all"
