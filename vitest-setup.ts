@@ -20,7 +20,7 @@ beforeAll(() => {
 });
 
 beforeEach(() => {
-  //@ts-expect-error
+  //@ts-expect-error mock
   window.PointerEvent = MouseEvent;
   //@ts-expect-error mocking
   delete window.location;

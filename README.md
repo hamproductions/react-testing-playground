@@ -1,6 +1,29 @@
-# 設定の説明
+# React Testing Playground
 
-## 参考できるところ
+テスティングにまつわる、テンプレート的なレポジトリです。
+
+## スタック
+
+- React (19), Next.js
+- park-ui, pandacss
+- Storybook, Vitest
+
+## コマンド
+
+詳しく`./package.json`に参照してください。
+
+- インストール：`bun i` 
+- Next.jsアプリを立ち上がる：`bun dev`
+- テストを開発する: `bun test:ui`
+- テストを実行する： `bun run test`
+- Coverage付きテスト: `bun run test:ci`
+- Storybook: `bun storybook`
+
+- lint: `bun lint`
+- type-check: `bun type-check`
+- 全部チェックする: `bun check`
+
+## 参考できるところ (?)
 - package.json
 - Github Actions
 - vitest.config.ts

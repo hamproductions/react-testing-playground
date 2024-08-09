@@ -35,7 +35,8 @@ export default defineConfig({
         'styled-system/*',
         '*/__test__/*',
         '*/components/ui/*',
-        '*/theme/*'
+        '*/theme/*',
+        '.next'
       ]
     },
     outputFile: {
