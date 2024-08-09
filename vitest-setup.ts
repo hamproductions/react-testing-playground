@@ -20,7 +20,8 @@ beforeAll(() => {
 });
 
 beforeEach(() => {
-  window.PointerEvent = PointerEvent;
+  //@ts-expect-error
+  window.PointerEvent = MouseEvent;
   //@ts-expect-error mocking
   delete window.location;
   window.location = new URL('http://localhost/') as unknown as Location;
